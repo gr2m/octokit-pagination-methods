@@ -2,7 +2,7 @@
 
 > Legacy Octokit pagination methods from v15
 
-[![Build Status](https://travis-ci.org/gr2m/octokit-pagination-methods.svg?branch=master)](https://travis-ci.org/gr2m/octokit-pagination-methods)
+[![Build Status](https://travis-ci.com/gr2m/octokit-pagination-methods.svg?branch=master)](https://travis-ci.com/gr2m/octokit-pagination-methods)
 [![Coverage Status](https://coveralls.io/repos/gr2m/octokit-pagination-methods/badge.svg?branch=master)](https://coveralls.io/github/gr2m/octokit-pagination-methods?branch=master)
 [![Greenkeeper badge](https://badges.greenkeeper.io/gr2m/octokit-pagination-methods.svg)](https://greenkeeper.io/)
 
