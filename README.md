@@ -2,6 +2,10 @@
 
 > Legacy Octokit pagination methods from v15
 
+[![Build Status](https://travis-ci.org/gr2m/octokit-pagination-methods.svg?branch=master)](https://travis-ci.org/gr2m/octokit-pagination-methods)
+[![Coverage Status](https://coveralls.io/repos/gr2m/octokit-pagination-methods/badge.svg?branch=master)](https://coveralls.io/github/gr2m/octokit-pagination-methods?branch=master)
+[![Greenkeeper badge](https://badges.greenkeeper.io/gr2m/octokit-pagination-methods.svg)](https://greenkeeper.io/)
+
 Several pagination methods such as `octokit.hasNextPage()` and `octokit.getNextPage()` have been removed from `@octokit/request` in v16.0.0 in favor of `octokit.paginate()`. This plugin brings back the methods to ease the upgrade to v16.
 
 ## Usage
