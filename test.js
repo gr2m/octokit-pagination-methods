@@ -4,6 +4,8 @@ const nock = require('nock')
 const Octokit = require('@octokit/rest')
   .plugin(require('.'))
 
+// hide deprecation warnings
+console.warn = () => {}
 test('@octokit/pagination-methods', (t) => {
   nock('https://api.github.com', {
     reqheaders: {
@@ -33,7 +35,7 @@ test('@octokit/pagination-methods', (t) => {
     token: 'secrettoken123'
   })
 
-  return octokit.orgs.getAll({
+  return octokit.orgs.list({
     page: 3,
     per_page: 1
   })
@@ -86,7 +88,12 @@ test('carries accept header correctly', () => {
 
   const octokit = new Octokit()
 
-  return octokit.users.getTeams({ per_page: 1 })
+  return octokit.teams.listForAuthenticatedUser({
+    per_page: 1,
+    headers: {
+      accept: 'application/vnd.github.hellcat-preview+json'
+    }
+  })
     .then(response => {
       return octokit.getNextPage(response)
     })
