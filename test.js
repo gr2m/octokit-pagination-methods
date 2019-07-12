@@ -15,7 +15,7 @@ test('@octokit/pagination-methods', (t) => {
     .get('/organizations')
     .query({ page: 3, per_page: 1 })
     .reply(200, [{}], {
-      'Link': '<https://api.github.com/organizations?page=4&per_page=1>; rel="next", <https://api.github.com/organizations?page=1&per_page=1>; rel="first", <https://api.github.com/organizations?page=2&per_page=1>; rel="prev"',
+      Link: '<https://api.github.com/organizations?page=4&per_page=1>; rel="next", <https://api.github.com/organizations?page=1&per_page=1>; rel="first", <https://api.github.com/organizations?page=2&per_page=1>; rel="prev"',
       'X-GitHub-Media-Type': 'octokit.v3; format=json'
     })
     .get('/organizations')
@@ -79,7 +79,7 @@ test('carries accept header correctly', () => {
     .get('/user/teams')
     .query({ per_page: 1 })
     .reply(200, [{}], {
-      'Link': '<https://api.github.com/user/teams?page=2&per_page=1>; rel="next"',
+      Link: '<https://api.github.com/user/teams?page=2&per_page=1>; rel="next"',
       'X-GitHub-Media-Type': 'github; param=hellcat-preview; format=json'
     })
     .get('/user/teams')
