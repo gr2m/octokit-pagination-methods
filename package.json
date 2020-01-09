@@ -38,7 +38,7 @@
     "@octokit/rest": "^16.0.0",
     "coveralls": "^3.0.2",
     "nock": "^11.1.0",
-    "semantic-release": "^15.13.12",
+    "semantic-release": "^16.0.0",
     "simple-mock": "^0.8.0",
     "standard": "^14.0.2",
     "standard-markdown": "^5.0.1",
