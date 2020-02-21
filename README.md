@@ -1,6 +1,6 @@
 # octokit-pagination-methods
 
-> Legacy Octokit pagination methods from v15
+> Legacy Octokit pagination methods from `@octokit/rest` v15
 
 [![Build Status](https://travis-ci.com/gr2m/octokit-pagination-methods.svg?branch=master)](https://travis-ci.com/gr2m/octokit-pagination-methods)
 [![Coverage Status](https://coveralls.io/repos/gr2m/octokit-pagination-methods/badge.svg?branch=master)](https://coveralls.io/github/gr2m/octokit-pagination-methods?branch=master)
